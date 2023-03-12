@@ -15,16 +15,16 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
@@ -45,13 +45,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\documentclass[]{deedy-resume}
+\documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
- 
+
 \pagestyle{fancy}
 \fancyhf{}
- 
-\rfoot{Page \thepage \hspace{1pt}}
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -59,15 +58,16 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Debarghya}{Das}{ \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
-\href{mailto:deedy@fb.com}{deedy@fb.com} | 607.379.5733 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
+\namesection{Mayur}{Patil}
+{
+\href{mailto:pmayurg01@gmail.com}{pmayurg01@gmail.com} | +91 86527 82826 \\
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,68 +76,18 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Education} 
-
-\subsection{Cornell University}
-\descript{MEng in Computer Science}
-\location{Dec 2014 | Ithaca, NY}
-\sectionsep
-
-\subsection{Cornell University}
-\descript{BS in Computer Science}
-\location{May 2014 | Ithaca, NY}
-College of Engineering \\
-Magna Cum Laude\\
-\location{ Cum. GPA: 3.83 / 4.0 \\
-Major GPA: 3.9 / 4.0}
-\sectionsep
-
-\subsection{La Martiniere for Boys}
-\location{Grad. May 2011|  Kolkata, India}
-\sectionsep
+\begin{minipage}[t]{0.31\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links} 
-Facebook:// \href{https://facebook/dd}{\bf dd} \\
-Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
-LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
-YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
-Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
-Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Coursework}
-\subsection{Graduate}
-Advanced Machine Learning \\
-Open Source Software Engineering \\
-Advanced Interactive Graphics \\
-Compilers + Practicum \\
-Cloud Computing \\
-Evolutionary Computation \\
-Defending Computer Networks \\
-Machine Learning \\
-\sectionsep
-
-\subsection{Undergraduate}
-Information Retrieval \\
-Operating Systems \\
-Artificial Intelligence + Practicum \\
-Functional Programming \\
-Computer Graphics + Practicum \\
-{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
-Unix Tools and Scripting \\
+\section{Links}
+Github:// \href{https://github.com/pmayur}{\bf pmayur} \\
+LinkedIn://  \href{https://www.linkedin.com/in/mayurgp/}{\bf mayurgp} \\
+Leetcode://  \href{https://leetcode.com/maypl/}{\bf maypl} \\
+Freecodecamp://  \href{https://www.freecodecamp.org/pmay}{\bf pmay} \\
+Hackerrank://  \href{https://www.hackerrank.com/maypl}{\bf maypl} \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
@@ -145,13 +95,54 @@ Unix Tools and Scripting \\
 
 \section{Skills}
 \subsection{Programming}
-\location{Over 5000 lines:}
-Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
-OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
-\location{Over 1000 lines:}
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\location{Core:}
+Javascript \textbullet{}   Typescript \\
 \location{Familiar:}
-AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+Java \textbullet{} Ruby \textbullet{} Dart \textbullet{} Latex \\
+\sectionsep
+\subsection{Stack}
+\location{Core:}
+Node \textbullet{}   Express \textbullet{} Nest \textbullet{} React \\
+\location{Familiar:}
+GraphQL \textbullet{} Flutter \textbullet{} Rails \\
+\sectionsep
+\subsection{Database}
+\location{Core:}
+Postgres \textbullet{}   MongoDB \textbullet{} SQL  \\
+\location{Familiar:}
+Neo4j \textbullet{} DynamoDB \\
+\sectionsep
+\subsection{Cloud Services}
+EC2 \textbullet{} RDS \textbullet{}  S3 \textbullet{} SNS \\
+\textbullet{} Serverless \textbullet{} Lambda \textbullet{} Eventbridge
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications}
+\subsection{\href{https://www.freecodecamp.org/certification/pmay/full-stack}{Full Stack Developer}}
+\location{freecodecamp}
+Open Source curriculum comprising of 6 certificates, 30+ projects, 1000+ hours covering - FrontEnd: \textbf{HTML, CSS, Bootstrap, Sass, JavaScript, Jquery, React, Redux}. BackEnd: \textbf{Node, Express, MongoDB}. Testing: \textbf{Mocha, Chai}. Others: \textbf{Passport,
+Helmet}.
+\sectionsep
+
+\subsection{\href{https://drive.google.com/file/d/0BybyZ0Uq84Rfa0J5UDZfVk9GYzg/view?resourcekey=0-F2Zb9DyMWJj_GXEGJYVaMg}{Modern Application \\ Development}}
+\location{NPTEL, IIT-M \& Hasura}
+Course on fundamentals of development. Was in the \textbf{90th percentile}, resulting in selection for an \textbf{internship with Hasura}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\subsection{B.Engineering - CS}
+\descript{University of Mumbai}
+\location{2014 – 2018}
+\location{Cum. GPA – 6.86}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -160,85 +151,69 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.66\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Facebook}
-\descript{| Software Engineer }
-\location{Jan 2015 - Present | New York, NY}
-\sectionsep
-
-\runsubsection{Coursera}
-\descript{| KPCB Fellow + Software Engineering Intern }
-\location{June 2014 – Sep 2014 | Mountain View, CA}
+\runsubsection{\href{https://labyrinth.ai/}{Labyrinth.ai}} \\
+\descript{Software Engineer }
+\location{Sept 2021 - Present | Remote, Bangalore}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
-\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
-\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+\begin{tightemize}
+\item Working on creating GraphQL api's for a NestJS service standardizing data of 100k+ processes and materials to perform Life Cycle Assessment, used Neo4j to model complex relationships
+\item Worked on major version change of premium b2b fashion marketplace, led migration of the core service to typescript, improved runtime of multiple api's upto 500ms by restructuring and making them more atomic
+\item Created serverless functions to introduce Intelligent storage of high volume of documents leveraging S3's storage classes, saving recurring costs of INR ~200k annually.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Google}
-\descript{| Software Engineering Intern }
-\location{May 2013 – Aug 2013 | Mountain View, CA}
+\runsubsection{\href{https://oursdao.xyz/}{Ours Community}} \\
+\descript{Sofware Development Engineer - 1 }
+\location{Jan 2021 – July 2021 | Remote }
 \begin{tightemize}
-\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.\item Created a backbone.js-like framework for the Captions editor.\end{tightemize}
+\item Independently worked on creating the front end of a web application hosting live audio discourses for a 4k+ members spritual community using react and the first version of its android app using react native as a founding engineer.
+\item Worked on creating api's for the core service, stateless chat system using redis-socket.io, integrated agora as RTC provider
+\end{tightemize}
 \sectionsep
 
-\runsubsection{Phabricator}
-\descript{| Open Source Contributor \& Team Leader}
-\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+\runsubsection{\href{https://monkeychai.com/}{Monkeychai}} \\
+\descript{Junior Software Engineer}
+\location{Sept 2019 – July 2020 | Mumbai }
 \begin{tightemize}
-\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.\item I created the Meme generator and more in PHP and Shell.\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.\end{tightemize}
+\item Worked on UI of a chart visualization heavy flutter app for a Risk Analysis fintech firm using flutter charts
+\item Created internally used full stack apps using Ruby on Rails, researched various case studies, discussed system design and created POC's for potential clients
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.eclinicalworks.com/}{eClinicalworks}} \\
+\descript{Technical Accounts Manager}
+\location{June 2018 – July 2019 | Mumbai }
+\begin{tightemize}
+\item Provided critical support for highly regulated healthcare software used in US based practices, resolved and reported issues maintaining detailed documentation
+\item Identified bugs, performed QA across versions, worked closely with development teams for resolution, and provided workarounds for critical workflows
+\end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
+%     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Research}
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Researcher}
-\location{Jan 2014 – Jan 2015 | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+\section{Projects}
+\runsubsection{App Store Reviews Notifier} \\
+\descript{}
+ Serverless function which polls Itunes RSS feeds to check new reviews of a particular application on the app store and notifies through slack and discord webhooks on demand or at regular intervals, used AWS-Lambda, API Gateway, and EventBridge for functionality used DynamoDB for storage
 \sectionsep
 
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+\runsubsection{Video Conferencing App} \\
+\descript{}
+Used Real Time Communication service provided by Agora SDK to develop an application supporting video calls and chat, used Redis and Socket.io for the same
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
 
-\section{Awards} 
-\begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
-\end{tabular}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Publications} 
-\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-\bibliography{publications}
-\nocite{*}
-
-\end{minipage} 
+\end{minipage}
 \end{document}  \documentclass[]{article}
